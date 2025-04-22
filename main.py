@@ -12,8 +12,7 @@ app = FastAPI()
 async def test_chat():
     try:
         chat_result = frosty_sdk.chat(
-            [{"role": "user", "content": "tell me a 10 word joke about the weather"}],
-            wait_for_log=True
+            [{"role": "user", "content": "tell me a 10 word joke about the weather"}]
         )
         return {"chat": chat_result}
     except Exception as e:
