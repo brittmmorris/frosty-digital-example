@@ -1,0 +1,31 @@
+# Bytecode and caches
+__pycache__/
+*.py[cod]
+*.so
+
+# Environment & dependency files
+.env
+.venv/
+env/
+venv/
+
+# OS files
+.DS_Store
+
+# Python tooling
+*.egg-info/
+*.log
+
+# PyInstaller
+dist/
+build/
+
+# Virtual environments
+*.swp
+*.bak
+
+# App platform generated files
+*.db
+
+# VSCode
+.vscode/

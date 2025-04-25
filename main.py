@@ -1,8 +1,12 @@
 from fastapi import FastAPI
 from frosty_ai import Frosty
+from dotenv import load_dotenv
+import os
 
-router_id = 'fa672a52-baf2-419f-9eae-e6e87ca61dc9'
-router_key = 'b1b613e6-fa0c-411d-8fc7-5776a3c4a4be'
+load_dotenv()
+
+router_id = os.getenv("ROUTER_ID")
+router_key = os.getenv("ROUTER_KEY")
 
 frosty_sdk = Frosty(router_id, router_key)
 
